@@ -15,7 +15,7 @@ class SetImpl<T extends Comparable<T>> implements Set<T> {
 	}
 
 	/**
-	 * Bonusaufgabe: Gibt einen Iterator zurück, welcher nur die Knoten
+	 * Bonusaufgabe: Gibt einen Iterator zurück, welcher nur Blätter zurückgibt (Knoten ohne Kinder!)
 	 */
 	public Iterator<T> leafIterator() {
 		throw new UnsupportedOperationException();
