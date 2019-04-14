@@ -1,4 +1,4 @@
-_Übungsaufgabe zur Veranstaltung [Programmieren 2](https://hsro-wif-prg2.github.io) im [Bachelorstudiengang Wirtschaftsinformatik](https://www.fh-rosenheim.de/technik/informatik-mathematik/wirtschaftsinformatik-bachelor/) an der [Hochschule Rosenheim](http://www.fh-rosenheim.de)._
+_Übungsaufgabe zur Veranstaltung [objektrorientiertes Programmieren](https://hsro-wif-oop.github.io) im [Bachelorstudiengang Wirtschaftsinformatik](https://www.th-rosenheim.de/technik/informatik-mathematik/wirtschaftsinformatik-bachelor/) an der [Hochschule Rosenheim](http://www.th-rosenheim.de)._
 
 
 # Iteratoren
@@ -9,7 +9,7 @@ In dieser Übung implementieren wir Iteratoren für die Datenstrukturen _Stack_ 
 
 ## Aufgabe 1: Iterator für Set
 
-Gegeben ist eine generische Implementierung für das Set, in Anlehnung an die Musterlösung der [Übung 3](https://github.com/hsro-wif-prg2/uebung03).
+Gegeben ist eine generische Implementierung für das Set, in Anlehnung an die Musterlösung der [Übung 3](https://github.com/hsro-wif-oop/oop-uebung03).
 
 - Implementieren Sie die durch das Interface `Iterable` vorgeschriebene Methode `iterator`.
 - Implementieren Sie dazu einen Iterator, welcher alle Elemente besucht.
@@ -23,7 +23,7 @@ Gegeben ist eine generische Implementierung für das Set, in Anlehnung an die Mu
 
 ## Aufgabe 2: Reverse-Iterator für `Stack<T>`
 
-Gegeben ist eine generische Implementierung eines Stapels (_stack_), in Anlehnung an die Musterlösung der [Übung 3](https://github.com/hsro-wif-prg2/uebung03).
+Gegeben ist eine generische Implementierung eines Stapels (_stack_), in Anlehnung an die Musterlösung der [Übung 3](https://github.com/hsro-wif-oop/oop-uebung03).
 Ein Stack ist eine Datenstruktur, dessen Reihenfolge bei der Entnahme (`pop`) umgekehrt zur Reihenfolge des hinzufügens (`push`) ist.
 Das heisst, das zuletzt mit `push` hinzugefügte Element das wird als nächstes mit `pop` entnommen (_last in, first out_).
 
