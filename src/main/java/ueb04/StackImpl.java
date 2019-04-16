@@ -1,6 +1,8 @@
 package ueb04;
 
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 class StackImpl<T> implements Stack<T> {
@@ -12,7 +14,27 @@ class StackImpl<T> implements Stack<T> {
 	@Override
 	public Iterator<T> iterator() {
 		// Iterator implementieren...
-		throw new UnsupportedOperationException();
+		return new Iterator<T>() {
+			StackImpl<Element> liste = new StackImpl<>();
+			{	if(top !=null){
+				Element it = top;
+				while (it!=null){
+					liste.push(it);
+					it=it.next;
+				}}
+			}
+
+			@Override
+			public boolean hasNext() {
+				boolean bool =liste.size()>0;
+				return bool;
+			}
+
+			@Override
+			public T next() {
+				return liste.pop().value;
+			}
+		};
 	}
 
 	private class Element {
